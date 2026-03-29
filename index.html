@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anand Srinivasan Official</title>
+    <title>Anand Srinivasan Official Telugu</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
@@ -19,6 +19,7 @@
                               linear-gradient(90deg, rgba(51, 255, 51, 0.05) 1px, transparent 1px);
             background-size: 30px 30px;
             overflow-x: hidden;
+            padding-bottom: 30px; /* Neeche extra space */
         }
 
         /* Top Ticker */
@@ -52,6 +53,22 @@
             z-index: 10;
         }
 
+        /* Guru, yahan gol DP area banaya hai */
+        .profile-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #33ff33; /* Neon border */
+            box-shadow: 0 0 15px rgba(51, 255, 51, 0.6);
+        }
+
         .channel-label {
             background: rgba(51, 255, 51, 0.1);
             color: #33ff33;
@@ -65,7 +82,7 @@
 
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 32px; /* Name lamba hai isliye font size thoda chota kiya taaki screen par sahi dikhe */
+            font-size: 32px;
             line-height: 1.2;
             margin-bottom: 5px;
             word-wrap: break-word;
@@ -147,19 +164,19 @@
             font-size: 12px;
         }
 
-        /* Telegram Button */
+        /* --- UPDATED: Patla Button --- */
         .join-btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
+            gap: 10px; /* Thoda gap kam kiya */
             background: #33ff33;
             color: #000;
             text-decoration: none;
-            padding: 20px;
-            border-radius: 12px;
+            padding: 15px 20px; /* Yahan padding kam karke use patla kiya hai Guru */
+            border-radius: 10px; /* Corner thode aur sharp kiye Guru */
             font-weight: 700;
-            font-size: 20px;
+            font-size: 18px; /* Font size halka sa chota Guru */
             text-transform: uppercase;
             box-shadow: 0 0 25px rgba(51, 255, 51, 0.6);
             animation: pulse 1.5s infinite;
@@ -167,7 +184,7 @@
 
         @keyframes pulse {
             0% { transform: scale(1); box-shadow: 0 0 15px rgba(51, 255, 51, 0.5); }
-            50% { transform: scale(1.02); box-shadow: 0 0 35px rgba(51, 255, 51, 0.9); }
+            50% { transform: scale(1.02); box-shadow: 0 0 30px rgba(51, 255, 51, 0.8); }
             100% { transform: scale(1); box-shadow: 0 0 15px rgba(51, 255, 51, 0.5); }
         }
 
@@ -207,15 +224,19 @@
 
     <div class="ticker-wrap">
         <div class="ticker">
-            FREE CHANNEL • TELUGU COMMUNITY • DAILY ALERTS • @ANAND_SRINIVASAN_OFFICIAL • NIFTY CALLS • BANKNIFTY • 
+            FREE CHANNEL • TELUGU COMMUNITY • DAILY ALERTS • @ANAND_SRINIVASAN_OFFICIAL TELUGU™ • NIFTY CALLS • BANKNIFTY • 
         </div>
     </div>
 
     <div class="main-content">
+        <div class="profile-container">
+            <img src="https://img.icons8.com/office/100/000000/person-male.png" class="profile-pic" alt="Profile">
+        </div>
+
         <div class="channel-label">● TELEGRAM CHANNEL · FREE</div>
         
-        <h1>@Anand_Srinivasan_official</h1>
-        <div class="sub-title">Official Trader™</div>
+        <h1>@Anand_Srinivasan_official Telugu</h1>
+        <div class="sub-title">Telugu Official Trader™</div>
 
         <div class="scan-line-container">
             <div class="moving-line"></div>
@@ -239,7 +260,7 @@
         </div>
 
         <a href="https://t.me/+XTZpHxU_5MdmODk1" class="join-btn">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="28">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="22">
             JOIN FREE ON TELEGRAM
         </a>
 
