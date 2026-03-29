@@ -3,7 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anand Srinivasan Official Telugu - Same Look</title>
+    <title>Anand Srinivasan Official Telugu</title>
+    
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1683009723118379');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1683009723118379&ev=PageView&noscript=1"
+    /></noscript>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
@@ -19,10 +35,9 @@
                               linear-gradient(90deg, rgba(51, 255, 51, 0.05) 1px, transparent 1px);
             background-size: 30px 30px;
             overflow-x: hidden;
-            padding-bottom: 30px; /* Neeche extra space */
+            padding-bottom: 40px;
         }
 
-        /* Top Ticker */
         .ticker-wrap {
             width: 100%;
             background: rgba(0, 0, 0, 0.9);
@@ -53,7 +68,7 @@
             z-index: 10;
         }
 
-        /* Guru, yahan gol DP area perfettamente updated hai */
+        /* Profile DP Styling */
         .profile-container {
             position: relative;
             display: inline-block;
@@ -61,12 +76,12 @@
         }
 
         .profile-pic {
-            width: 90px;
-            height: 90px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #33ff33; /* Neon border */
-            box-shadow: 0 0 15px rgba(51, 255, 51, 0.6);
+            border: 3px solid #33ff33;
+            box-shadow: 0 0 20px rgba(51, 255, 51, 0.6);
         }
 
         .channel-label {
@@ -77,29 +92,29 @@
             border-radius: 20px;
             font-size: 11px;
             display: inline-block;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 32px; /* Guru, name chota karne ke liye font size perfettamente updated hai */
-            line-height: 1.2;
-            margin-bottom: 5px;
+            font-size: 28px;
+            line-height: 1.3;
+            margin-bottom: 10px;
             word-wrap: break-word;
+            padding: 0 10px;
         }
 
         .sub-title {
             color: #33ff33;
             font-size: 14px;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             text-transform: uppercase;
             font-weight: 600;
         }
 
-        /* Moving Scan Line */
         .scan-line-container {
             width: 100%;
-            height: 60px;
+            height: 50px;
             position: relative;
             margin: 10px 0;
             overflow: hidden;
@@ -109,25 +124,24 @@
             width: 100%;
             height: 2px;
             background: linear-gradient(90deg, transparent, #33ff33, transparent);
-            box-shadow: 0 0 15px #33ff33, 0 0 5px #fff;
+            box-shadow: 0 0 15px #33ff33;
             position: absolute;
             animation: moveUpDown 3s ease-in-out infinite;
         }
 
         @keyframes moveUpDown {
             0% { top: 0; opacity: 0; }
-            50% { top: 30px; opacity: 1; }
-            100% { top: 60px; opacity: 0; }
+            50% { top: 25px; opacity: 1; }
+            100% { top: 50px; opacity: 0; }
         }
 
         .description {
             color: #aaa;
             font-size: 14px;
             line-height: 1.5;
-            margin: 20px 0 30px;
+            margin: 15px 0 25px;
         }
 
-        /* Stats Grid */
         .stats-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -141,82 +155,62 @@
             padding: 10px 5px;
             border-radius: 8px;
             font-size: 11px;
-            color: #eee;
         }
 
         .up { color: #33ff33; font-weight: bold; }
         .down { color: #ff4444; font-weight: bold; }
 
-        /* Tags */
         .tags-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 10px;
-            margin-bottom: 40px;
+            gap: 8px;
+            margin-bottom: 30px;
         }
 
         .tag {
             background: #111;
             border: 1px solid rgba(51, 255, 51, 0.2);
-            padding: 8px 12px;
+            padding: 6px 10px;
             border-radius: 6px;
             font-size: 12px;
         }
 
-        /* Patla Button - perfettamente updated Guru */
         .join-btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px; 
+            gap: 10px;
             background: #33ff33;
             color: #000;
             text-decoration: none;
-            padding: 15px 20px; /* Thoda kam padding se perfettamente balanced dikhega */
-            border-radius: 10px; 
+            padding: 14px 20px;
+            border-radius: 12px;
             font-weight: 700;
-            font-size: 18px; /* Perfectly patla Guru */
+            font-size: 18px;
             text-transform: uppercase;
-            box-shadow: 0 0 25px rgba(51, 255, 51, 0.6);
+            box-shadow: 0 0 20px rgba(51, 255, 51, 0.5);
             animation: pulse 1.5s infinite;
         }
 
         @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 0 15px rgba(51, 255, 51, 0.5); }
-            50% { transform: scale(1.02); box-shadow: 0 0 30px rgba(51, 255, 51, 0.8); }
-            100% { transform: scale(1); box-shadow: 0 0 15px rgba(51, 255, 51, 0.5); }
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
         }
 
-        .footer-text {
-            margin-top: 20px;
-            font-size: 11px;
-            color: #444;
-        }
-
-        /* Kunal Ads Section */
         .ads-promo {
             margin-top: 25px;
-            padding: 10px;
             text-decoration: none;
             display: inline-block;
             font-size: 14px;
-            transition: 0.3s;
         }
-
-        .ads-text { color: #ffffff; opacity: 0.9; }
 
         .brand-name {
             color: #00d2ff;
             font-weight: 700;
             text-decoration: underline;
             margin-left: 5px;
-            text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
-        }
-
-        .ads-promo:hover .brand-name {
-            color: #fff;
-            text-shadow: 0 0 20px #00d2ff;
         }
     </style>
 </head>
@@ -230,21 +224,21 @@
 
     <div class="main-content">
         <div class="profile-container">
-            <img src="https://img.icons8.com/office/100/000000/person-male.png" class="profile-pic" alt="Profile">
+            <img src="logo.png" class="profile-pic" alt="Profile DP">
         </div>
 
         <div class="channel-label">● TELEGRAM CHANNEL · FREE</div>
         
-        <h1>@Anand_Srinivasan_official Telugu</h1>
-        <div class="sub-title">Telugu Official Trader™</div>
+        <h1>@Anand_Srinivasan_official<br>Telugu</h1>
+        <div class="sub-title">Official Trader™</div>
 
         <div class="scan-line-container">
             <div class="moving-line"></div>
         </div>
 
-        <div class="description">
+        <p class="description">
             Expert stock & options calls for the Telugu community — NIFTY, BANKNIFTY & intraday tips, daily on Telegram.
-        </div>
+        </p>
 
         <div class="stats-grid">
             <div class="stat-box">NIFTY <span class="up">23,842 ▲</span></div>
@@ -253,10 +247,10 @@
         </div>
 
         <div class="tags-container">
-            <div class="tag">Intraday</div>
-            <div class="tag">Options</div>
-            <div class="tag">Swing</div>
-            <div class="tag">Alerts</div>
+            <div class="tag">📈 Intraday</div>
+            <div class="tag">🎯 Options</div>
+            <div class="tag">💹 Swing</div>
+            <div class="tag">⚡ Alerts</div>
         </div>
 
         <a href="https://t.me/+XTZpHxU_5MdmODk1" class="join-btn">
@@ -264,12 +258,8 @@
             JOIN FREE ON TELEGRAM
         </a>
 
-        <div class="footer-text">
-            Market live · Members active · Trade responsibly
-        </div>
-
         <a href="https://t.me/+XTZpHxU_5MdmODk1" class="ads-promo">
-            <span class="ads-text">Meta ads setup k liye dm kro</span>
+            <span style="color:#fff; opacity:0.8">Meta ads setup k liye dm kro</span>
             <span class="brand-name">Kunal Ads</span>
         </a>
     </div>
